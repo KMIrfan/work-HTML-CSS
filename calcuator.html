@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    button{
+        width: 30px;
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+</head>
+<body>
+    <table>
+    <tr><td colspan="4">
+    <input type="text" id="textbox"></td></tr>
+    <tr>
+        <td><button id="one" onclick="clic('1')" value="1">1</button></td>
+        <td><button id="two" onclick="clic('2')" value="2">2</button></td>
+        <td><button id="three" onclick="clic('3')" value="3">3</button></td>
+        <td><button id="four" onclick="clic('+')" value="+">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clic('4')" value="4">4</button></td>
+        <td><button onclick="clic('5')" value="5">5</button></td>
+        <td><button onclick="clic('6')" value="6">6</button></td>
+        <td><button onclick="clic('-')" value="-">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clic('7')" value="7">7</button></td>
+        <td><button onclick="clic('8')" value="8">8</button></td>
+        <td><button onclick="clic('9')" value="9">9</button></td>
+        <td><button onclick="clic('*')" value="*">*</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clic('00')" value="00">00</button></td>
+        <td><button onclick="clic('0')" value="0">0</button></td>
+        <td><button onclick="clic('.')" value=".">.</button></td>
+        <td><button onclick="che()" value="=">=</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clearscreen()" >C</button></td>
+        <td><button>%</button></td>
+        <td><button>?</button></td>
+        <td><button onclick="clic('/')" value="/">/</button></td>
+    </tr>
+</table>
+    <script>
+        // var n=parseInt(prompt("Enter the limit"));
+        // for(i=1;i<=n;i++)
+        // {
+        //     for(j=1;j<=i;j++)
+        //     {
+        //         document.write('*');
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // n=4;
+        // for(i=0;i<=n;i++)
+        // {
+        //     for(j=0;j<=n;j++)
+        //     {
+                 
+        //         if(i==0 || i==4)
+        //         document.write('*')
+        //         else if(j==0||j==4)
+        //         document.write('*')
+        //         else
+        //         document.write('&nbsp'+'&nbsp')
+        //     }
+        //     document.write('<br>')
+        // }
+
+            function clic(value){
+                document.getElementById('textbox').value+=value; 
+            }
+
+            function calc(){
+                var a=document.getElementById('textbox').value;
+                var b=eval(a);
+                document.getElementById('textbox').value=b;
+            }
+
+            function clearscreen(){
+                document.getElementById('textbox').value='';
+            }
+
+            function che()
+            {
+                var arr=document.getElementById('textbox').value;
+                var brr=['+','-','*','/','.','?','%'];
+                var flag;
+                var temp=0;
+                for(i=0;i<arr.length;i++)
+                {
+                    if(arr[i]==arr[i+1])
+                        flag=arr[i];
+                    }
+                    for(j=0;j<brr.length;j++){
+                if(flag==brr[j])
+                temp=1;
+                    }
+                    if(temp==1)
+                    document.getElementById('textbox').value='invalid';
+                else
+                calc();
+            }
+            
+           
+           
+    </script>
+</body>
+</html>

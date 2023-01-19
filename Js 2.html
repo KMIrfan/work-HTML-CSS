@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- <label>Enter Password</label>
+        <input type="password" id="pwd">
+        <input type="submit" onclick="check()">
+        <label>Output</label> -->
+        <!-- <input type="text" id="output"> -->
+    
+    <script>
+        // function check()
+        // {
+             
+        //     var temp=document.getElementById("pwd").value;
+        //     // var flag=temp.match(/[a-z]/g) ;
+        //     // document.getElementById("output").innerHTML=temp;
+        //     if(temp=="")
+        //     document.getElementById("output").innerHTML="Required Field"
+        //     else if(temp.length<8)
+        //     document.getElementById("output").innerHTML="Invalid"
+        //     else if(temp.match(/[a-z]/g)&&temp.match(/[A-Z]/g)&&temp.match(/[1-9]/g)&&temp.match(/[@,#,?,-,_+]/))
+        //     document.getElementById("output").innerHTML="Strong Password"
+        //     else
+        //     document.getElementById("output").innerHTML="Weak Password"
+
+        // }
+
+    //    Multiplication
+
+        // let n=parseInt(prompt("Enter the number"));
+        // mul=0;
+        // limit=parseInt(prompt("Enter the Range"));
+
+        // for(i=1;i<=limit;i++)
+        // {
+        //     mul=i*n;
+        //     document.write("<br>"+i+" * "+n+" = "+mul);
+        // }
+
+        // let a=[1,6,8,10];
+        // let b=[1,7,8,10];
+        // let arr=a.sort(function(a, b){return a-b});
+        // let brr=b.sort(function(a, b){return a-b});
+        // flag=0;
+        // document.write(arr);
+        // document.write("<br>"+brr);
+        // if(arr.length==brr.length)
+        // {
+        //     // document.write("Same")
+        //     for(i=0;i<arr.length;i++)
+        //     {
+              
+        //             if(arr[i]!=brr[i])
+        //             flag=1;
+               
+        //     }
+        // }      
+        // if(flag==1)
+        // {
+        //     document.write("<br>"+"Not same")
+        // }
+        // else{
+        //     document.write("<br>"+"same")
+        // }
+          
+            // Factorial
+        // var n=3;
+        // fact=1;
+        // for(i=1;i<=n;i++){
+        //     fact=fact*i;
+        // }
+        // document.write(fact)
+
+        
+                var arr=[1,2,'+','*',3,'-',4]
+                var brr=['+','-'];
+                var flag;
+                var temp=0;
+                document.write(arr);
+                document.write('<br>'+brr);
+                for(i=0;i<arr.length;i++)
+                {
+                    if(arr[i]==arr[i+1])
+                        flag=arr[i];
+                    }
+                    for(j=0;j<brr.length;j++){
+                if(flag==brr[j])
+                temp=1;
+                    }
+                    if(temp==1)
+                document.write('error')
+                else
+                document.write('ok')
+             
+                
+            
+
+    </script>
+</body>
+</html>

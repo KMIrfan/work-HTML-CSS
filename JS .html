@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+        // Star Printing
+
+    //     num=parseInt(prompt("Enter the limit"));
+     
+    //  for(i=num;i>0;i--){
+    //     for(j=1;j<=i;j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    //  }
+
+
+    //  for(i=1;i<=num;i++){
+    //     for(j=1;j<=i;j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    //  }
+
+    
+    
+    // Prime Number
+
+    // num=parseInt(prompt("Enter the number"));
+    // flag=0;
+    // for(i=2;i<num;i++)
+    // {
+    //   if(num%i==0){
+    //     flag=1;
+    //     break;
+    //     }
+    // }
+    
+    // if(flag==1)
+    // {
+    //     document.write("Not a Prime");
+    // }
+    // else if(num==1 || num==0){
+    //     document.write("Invalid");
+    // }
+    // else
+    // {
+    //     document.write("Prime Number")
+    // }
+    
+
+    // Array Sort
+    
+    // var arr =[];
+    // var limit=parseInt(prompt("Enter the array size"));
+    // for(i=0;i<limit;i++){
+    //     arr[i]=parseInt(prompt("Enter the number"));
+    // }
+    
+    // for(i=0;i<arr.length;i++){
+    //     for(j=i+1;j<arr.length;j++){
+    //         if(arr[i]>arr[j]){
+    //             temp=arr[i];
+    //             arr[i]=arr[j];
+    //             arr[j]=temp;
+                
+    //         }
+           
+    //     }
+        
+    // }
+    // document.write(arr);
+
+
+
+    // Leader of array
+
+//     let arr =[16,17,4,3,5,2];
+    
+//     for(i=0;i<arr.length;i++)
+//     {
+//         for(j=i+1; j<arr.length; j++)
+//         {
+//             if(arr[i] <=arr[j])
+//                 break;
+//     }
+ 
+//    if(j==arr.length)
+   
+//     document.write(arr[i]+" ");
+//     }
+
+
+// replace string
+
+// var a="irfan"
+//     document.write(a.replace("n","k"));
+ 
+ 
+//  c="race";
+// //  b="race";
+// //  var c=[16, 5, 8, 3]
+//  var temp;
+ 
+//  n1=a.length;
+//  n2=b.length;
+// c.split('');
+//  for(i=0;i<c.length;i++)
+//  {
+//     for(j=i+1; j<c.length; j++)
+//     {
+//         if(c[i]>c[j])
+//         {
+//             temp=c[i];
+//             c[i]=c[j];
+//             c[j]=temp;
+
+//         }
+//     }
+//  }
+//  document.write(c);
+
+//  sorting using sort unctions
+// c.sort(function(a, b){return a - b});;
+
+// document.write(c);
+ 
+// string character sorting
+//  function abc()
+//  {
+//     c="race";
+// return c.split('').sort().join('');
+//  }
+// document.write(abc());
+
+
+// Anagram
+// a=prompt("Enter the first string");
+// b=prompt("Enter the second string");
+// flag=0;
+// var arr=a.split('').sort().join('');
+
+// // document.write(arr);
+
+// var brr=b.split('').sort().join('');
+
+// // document.write(brr);
+
+// if(arr===brr){
+//     document.write("Anagram")
+// }
+// else{
+//     document.write("Not an Anagram")
+// }
+ 
+
+
+// peak value
+
+// var arr =[5,3,20,4,1,0];
+// var n=arr.length;
+// var flag=0;
+
+// if(arr[0]>arr[1]) 
+// {
+//     document.write(arr[0]+" ");
+  
+// }
+// for(i=0;i<n; i++)
+// {
+//     if(arr[i]>=arr[i+1] && arr[i]>=arr[i-1]){
+   
+//     document.write(arr[i]+" ");
+//     }
+   
+// }
+// if(arr[n-1]>arr[n-2])
+// {
+//     document.write(arr[n-1]);
+  
+// }
+
+
+
+// Bubble sort
+
+var arr =[5,12,2,10,8,4];
+        
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<arr.length;j++){
+            if(arr[j]>arr[j+1]){
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+                
+            }
+           
+        }
+        
+    }
+    document.write(arr);
+
+ </script>
+</body>
+</html>
